@@ -1,7 +1,26 @@
-<div class="Login">
-    <mat-form-field appearance="fill">
-        <mat-label>Enter your email</mat-label>
-        <input matInput placeholder="pat@example.com" [formControl]="email" required>
-        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-      </mat-form-field>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="general">
+    <div class="cabecera">
+        <h1>Socigence App</h1>
+        <!--<mat-icon aria-hidden="false" class="iconoTitulo">group</mat-icon>-->
+    </div>
+    <br>
+
+    <div class="Login">
+        <h2>Bienvenido a Socigence App</h2>
+        <mat-form-field class="example-full-width">
+            <mat-label>Ingresa tu correo</mat-label>
+            <input matInput placeholder="Ex. juan123@gmail.com">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="primary">Iniciar sesión</button>
+    </div>
 </div>
