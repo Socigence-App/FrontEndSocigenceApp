@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
+
 
 @Component({
   selector: 'app-login',
@@ -7,7 +7,7 @@ import {FormControl, Validators} from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  
+  hide = true;
   ngOnInit(): void {
   }
 
