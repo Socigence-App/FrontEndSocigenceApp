@@ -1,0 +1,28 @@
+<app-menu-desplegable>
+    <div class="general">
+        <div class="titulo">
+            <h2>Realizar publicación</h2>
+        </div>
+        <div class="publicacion">
+
+            <mat-form-field appearance="fill">
+                <mat-label>Selecciona la categoría</mat-label>
+                <mat-select disableRipple>
+                  <mat-option value="1">Option 1</mat-option>
+                  <mat-option value="2">Option 2</mat-option>
+                  <mat-option value="3">Option 3</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <br>
+            <p-editor [(ngModel)]="text" [style]="{'height':'100px'}"></p-editor>
+            <br>
+            <h3>Añade una imagen a tu publicacion</h3>
+            <div class="example-button-container">
+                <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+                  <mat-icon>add</mat-icon>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</app-menu-desplegable>

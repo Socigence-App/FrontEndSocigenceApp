@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-registro',
@@ -7,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistroComponent implements OnInit {
   hide = true;
+  toppings = new FormControl();
+
+  toppingList: string[] = ['Tarjeta de identidad', 'Cédula de ciudadanía', 'Cédula de extranjería', 'Pasaporte'];
+
 
   constructor() { }
 
