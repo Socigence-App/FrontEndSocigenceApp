@@ -10,12 +10,12 @@
         <h2>Bienvenido a Socigence App</h2>
         <mat-form-field class="example-full-width">
             <mat-label>Ingresa tu correo</mat-label>
-            <input matInput placeholder="Ex. juan123@gmail.com">
+            <input matInput placeholder="Ex. juan123@gmail.com" [(ngModel)]="username">
         </mat-form-field>
         <br>
         <mat-form-field appearance="fill">
             <mat-label>Enter your password</mat-label>
-            <input matInput [type]="hide ? 'password' : 'text'">
+            <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="contrasena">
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
