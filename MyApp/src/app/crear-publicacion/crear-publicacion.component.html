@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <app-menu-desplegable>
     <div class="general">
         <div class="titulo">
@@ -14,14 +15,19 @@
                 </mat-select>
             </mat-form-field>
             <br>
-            <p-editor [(ngModel)]="text" [style]="{'height':'100px'}"></p-editor>
+            <div class="editor">
+            <p-editor [(ngModel)]="text" [style]="{'height':'150px'}"></p-editor>
+            </div>
             <br>
-            <h3>Añade una imagen a tu publicacion</h3>
+            <h3>Añade una imagen a tu publicación</h3>
             <div class="example-button-container">
                 <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
                   <mat-icon>add</mat-icon>
                 </button>
             </div>
+            <br>
+            <button mat-raised-button color="primary" [style]="{'margin':'10px'}">Atrás</button>
+            <button mat-raised-button color="primary">Publicar</button>
 
         </div>
     </div>

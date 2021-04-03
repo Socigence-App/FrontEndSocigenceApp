@@ -23,8 +23,8 @@ import {EditorModule} from 'primeng/editor';
 
 import { RegistroComponent } from './registro/registro.component';
 import { MenuDesplegableComponent } from './menu-desplegable/menu-desplegable.component';
-import { PerfilComponent } from './perfil/perfil.component';
 import { CrearPublicacionComponent } from './crear-publicacion/crear-publicacion.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -34,8 +34,8 @@ import { CrearPublicacionComponent } from './crear-publicacion/crear-publicacion
     LoginComponent,
     RegistroComponent,
     MenuDesplegableComponent,
-    PerfilComponent,
-    CrearPublicacionComponent
+    CrearPublicacionComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
