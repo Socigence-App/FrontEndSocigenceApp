@@ -17,6 +17,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
 
 import {EditorModule} from 'primeng/editor';
 
@@ -25,6 +26,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { MenuDesplegableComponent } from './menu-desplegable/menu-desplegable.component';
 import { CrearPublicacionComponent } from './crear-publicacion/crear-publicacion.component';
 import { HomeComponent } from './home/home.component';
+import { VerPublicacionesComponent } from './ver-publicaciones/ver-publicaciones.component';
 
 
 
@@ -35,7 +37,8 @@ import { HomeComponent } from './home/home.component';
     RegistroComponent,
     MenuDesplegableComponent,
     CrearPublicacionComponent,
-    HomeComponent
+    HomeComponent,
+    VerPublicacionesComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,8 @@ import { HomeComponent } from './home/home.component';
     MatSidenavModule,
     MatListModule,
     AccordionModule,
-    EditorModule
+    EditorModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
