@@ -16,16 +16,18 @@
 h1{
     font-family: fantasy;
     font-size: 70px;
-    color: blue;
+    color: #2E86C1;
+    text-align: center;
+    
 }
 
 .registro{
     width: 25%;
     text-align: center;
     padding: 10px;
-    margin-left: 70%;
-    margin-top: 2%;
-    background-color: #EBEDEF ;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E5E8E8;
     border: 2px;
     border-radius: 5px;
 }
@@ -48,10 +50,9 @@ h2{
     }
     
     .registro{
-        width: 70%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 10%;
     }
 
 
