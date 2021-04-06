@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl} from '@angular/forms';
+import { User } from '../models/user.model';
+import { UserInfoService } from '../service/user-info.service';
 
 @Component({
   selector: 'app-registro',
@@ -8,14 +9,20 @@ import {FormControl} from '@angular/forms';
 })
 export class RegistroComponent implements OnInit {
   hide = true;
-  toppings = new FormControl();
-
-  toppingList: string[] = ['Tarjeta de identidad', 'Cédula de ciudadanía', 'Cédula de extranjería', 'Pasaporte'];
+  nuevoUsuario: User;
 
 
-  constructor() { }
+  constructor(private UserInfoService: UserInfoService) { 
+    this.nuevoUsuario= new User();
+  }
 
   ngOnInit(): void {
   }
+
+  public crearUsuario(){
+    this.UserInfoService.createUser(this.nuevoUsuario);
+  }
+
+  
 
 }
