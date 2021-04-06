@@ -2,7 +2,7 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from '@angular/core';
 
 import {environment} from '../environment/env';
-import { Usuario } from "../models/user.model";
+import { User } from "../models/user.model";
 import { Observable } from 'rxjs';
 
 
@@ -16,16 +16,16 @@ export class UserInfoService{
 
     }
 
-    createUser(newUser: Usuario){
-        this.http.post('${environment.apiUrl}user',newUser).subscribe(user => console.log(user))
+    createUser(newUser: User){
+        this.http.post(`${environment.apiUrl}user`,newUser).subscribe(user => console.log(user))
     }
 
     buscarUser (username: String) {
-        return this.http.get <{data: Usuario}>(`${environment.apiUrl}user/${username}`);
+        return this.http.get<User>(`${environment.apiUrl}user/${username}`);
     }
   
-    getAllUsers (): Observable<{data: Usuario[]}> {
-        return this.http.get <{data: Usuario[]}>(`${environment.apiUrl}user`);
+    getAllUsers (): Observable<{data: User[]}> {
+        return this.http.get <{data: User[]}>(`${environment.apiUrl}user`);
     }
 
 }

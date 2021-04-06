@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from '../environment/env';
-import { Usuario } from '../models/user.model';
+import { User } from '../models/user.model';
 import { UserInfoService } from '../service/user-info.service';
 
 
@@ -11,13 +11,45 @@ import { UserInfoService } from '../service/user-info.service';
 })
 
 export class LoginComponent implements OnInit {
-  usuario: Usuario;
-  username!: string;
-  contrasena!: string;
+  nuevoUsuario: User;
+  username: String;
+  contrasena: String;
+  currentUser: User;
 
-  constructor(){
-    this.usuario=new Usuario();
+  constructor(private userInfoService: UserInfoService){
+    this.nuevoUsuario=new User();
+    this.contrasena = new String;
+    this.username = new String;
+    this.currentUser = new User(); 
   }
+
+  public loguear () {
+
+    let usuario = this.userInfoService.buscarUser(this.username).subscribe(
+      async (user) => {
+        this.currentUser = await user;
+        console.log(this.currentUser);
+        console.log(user);
+
+      }
+    )
+    
+    if (this.currentUser == null) {
+      console.log("Usuario no registrado");
+      console.log(this.currentUser)
+    }
+    else if(this.currentUser.contrasena == this.contrasena) {
+      environment.User = this.currentUser;  
+      console.log(this.currentUser)  
+    } 
+    else {
+      console.log("Contraseña Incorrecta");
+    }
+  }
+
+
+
+  
   
 
   hide = true;

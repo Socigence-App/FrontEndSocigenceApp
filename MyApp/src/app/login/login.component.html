@@ -9,8 +9,8 @@
     <div class="Login">
         <h2>Bienvenido a Socigence App</h2>
         <mat-form-field class="example-full-width">
-            <mat-label>Ingresa tu correo</mat-label>
-            <input matInput placeholder="Ex. juan123@gmail.com" [(ngModel)]="username">
+            <mat-label>Ingresa tu nombre de usuario</mat-label>
+            <input matInput [(ngModel)]="username">
         </mat-form-field>
         <br>
         <mat-form-field appearance="fill">
@@ -22,7 +22,7 @@
         </mat-form-field>
         <br>
         <button mat-raised-button color="accent" style="margin: 5px;" [routerLink]="['/home']">Atrás</button>
-        <button mat-raised-button color="accent" [routerLink]="['/home']">Iniciar sesión</button>
+        <button mat-raised-button color="accent" [routerLink]="['/publicaciones']" (click)="loguear()">Iniciar sesión</button>
     </div>
     <br>
     <div class="banner">

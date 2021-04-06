@@ -9,17 +9,17 @@
     <div class="registro">
         <mat-form-field class="example-full-width">
             <mat-label>Nombres*</mat-label>
-            <input matInput placeholder="Ex. Juan Felipe">
+            <input matInput placeholder="Ex. Juan Felipe" [(ngModel)]="nuevoUsuario.nombre">
         </mat-form-field>
         <br>
         <mat-form-field class="example-full-width">
-            <mat-label>Apellidos*</mat-label>
-            <input matInput placeholder="Ex. Peña Paiba">
+            <mat-label>Username*</mat-label>
+            <input matInput placeholder="Ex. Peña Paiba" [(ngModel)]="nuevoUsuario.username">
         </mat-form-field>
         <br>
         <mat-form-field class="example-full-width">
             <mat-label>Email</mat-label>
-            <input matInput placeholder="Ex. juan123@gamil.com">
+            <input matInput placeholder="Ex. juan123@gamil.com" [(ngModel)]="nuevoUsuario.email">
         </mat-form-field>
         <br>
         <mat-form-field appearance="fill">
@@ -33,17 +33,17 @@
         <br>
         <mat-form-field class="example-full-width">
             <mat-label>Numero de identificación</mat-label>
-            <input matInput placeholder="Ex. 123456789">
+            <input matInput placeholder="Ex. 123456789" [(ngModel)]="nuevoUsuario.IdNumero">
         </mat-form-field>
         <br>
         <mat-form-field class="example-full-width">
             <mat-label>Telefono</mat-label>
-            <input matInput placeholder="Ex. 3201234567">
+            <input matInput placeholder="Ex. 3201234567" [(ngModel)]="nuevoUsuario.Telefono">
         </mat-form-field>
         <br>
         <mat-form-field appearance="fill">
             <mat-label>Contraseña</mat-label>
-            <input matInput [type]="hide ? 'password' : 'text'">
+            <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="nuevoUsuario.contrasena">
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
@@ -51,14 +51,14 @@
         <br>
         <mat-form-field appearance="fill">
             <mat-label>Confirmar contraseña</mat-label>
-            <input matInput [type]="hide ? 'password' : 'text'">
+            <input matInput [type]="hide ? 'password' : 'text'"[(ngModel)]="nuevoUsuario.contrasena">
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
         </mat-form-field>
         <br>
         <button mat-raised-button color="accent" style="margin: 5px;" [routerLink]="['/home']">Atrás</button>
-        <button mat-raised-button color="accent" [routerLink]="['/publicaciones']">Regístrate</button>
+        <button mat-raised-button color="accent" [routerLink]="['/publicaciones']" (click)="crearUsuario()">Regístrate</button>
     </div>
 </div>
 

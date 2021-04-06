@@ -21,6 +21,8 @@ import {MatCardModule} from '@angular/material/card';
 
 import {EditorModule} from 'primeng/editor';
 
+import {HttpClientModule } from '@angular/common/http';
+
 
 import { RegistroComponent } from './registro/registro.component';
 import { MenuDesplegableComponent } from './menu-desplegable/menu-desplegable.component';
@@ -56,7 +58,8 @@ import { VerPublicacionesComponent } from './ver-publicaciones/ver-publicaciones
     MatListModule,
     AccordionModule,
     EditorModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
