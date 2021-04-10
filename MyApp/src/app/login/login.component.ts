@@ -1,3 +1,4 @@
+import { JsonpClientBackend } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { environment } from '../environment/env';
 import { User } from '../models/user.model';
@@ -23,28 +24,25 @@ export class LoginComponent implements OnInit {
     this.currentUser = new User(); 
   }
 
-  public loguear () {
-
-    let usuario = this.userInfoService.buscarUser(this.username).subscribe(
+  public async loguear () {
+    let data;
+    let usuario = await this.userInfoService.buscarUser(this.username).subscribe(
       async (user) => {
-        this.currentUser = await user;
-        console.log(this.currentUser);
-        console.log(user);
+        console.log(user[0]);
+        if (user[0].contrasena == null) {
+          console.log("Usuario no registrado");
+        }
+        else if(user[0].contrasena == this.contrasena) {
+          environment.User = this.currentUser;  
+          console.log("Ingreso con exito")
+        } 
+        else {
+          console.log("Contraseña Incorrecta");
+        }
+        
 
       }
-    )
-    
-    if (this.currentUser == null) {
-      console.log("Usuario no registrado");
-      console.log(this.currentUser)
-    }
-    else if(this.currentUser.contrasena == this.contrasena) {
-      environment.User = this.currentUser;  
-      console.log(this.currentUser)  
-    } 
-    else {
-      console.log("Contraseña Incorrecta");
-    }
+    );
   }
 
 

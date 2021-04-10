@@ -20,8 +20,8 @@ export class UserInfoService{
         this.http.post(`${environment.apiUrl}user`,newUser).subscribe(user => console.log(user))
     }
 
-    buscarUser (username: String) {
-        return this.http.get<User>(`${environment.apiUrl}user/${username}`);
+    buscarUser (username: String):Observable<User[]> {
+        return this.http.get<User[]>(`${environment.apiUrl}user/${username}`);
     }
   
     getAllUsers (): Observable<{data: User[]}> {
