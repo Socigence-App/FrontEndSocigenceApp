@@ -9,16 +9,11 @@
             <mat-card class="example-card">
                 <mat-card-header>
                   <div mat-card-avatar class="example-header-image"></div>
-                  <mat-card-title>Shiba Inu</mat-card-title>
-                  <mat-card-subtitle>Engativá</mat-card-subtitle>
+                  <mat-card-title>{{posts[2].titulo}}</mat-card-title>
+                  <mat-card-subtitle>{{posts[2]['user'] | json}}</mat-card-subtitle>
                 </mat-card-header>
-                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
                 <mat-card-content>
-                  <p>
-                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                    bred for hunting.
-                  </p>
+                  <div [innerHtml]="posts[2].descripcion"></div>
                 </mat-card-content>
                 <mat-card-actions>
                   <button mat-raised-button color="accent">LIKE</button>
@@ -28,6 +23,7 @@
             <br>
         </div>
     </div>
+    <button mat-raised-button color="accent" [routerLink]="['/crearCategoria']" >Crear Categoria</button>
+    <button mat-raised-button color="accent" [routerLink]="['/crearPublicacion']" >Crear publicacion</button>
+    <button mat-raised-button color="accent" [routerLink]="['/crearReto']" >Crear Reto</button>
 </app-menu-desplegable>
-<button mat-raised-button color="accent" [routerLink]="['/crearCategoria']" >Crear Categoria</button>
-<button mat-raised-button color="accent" [routerLink]="['/crearPublicacion']" >Crear publicacion</button>

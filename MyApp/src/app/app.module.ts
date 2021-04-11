@@ -36,6 +36,7 @@ import { CrearCategoriaComponent } from './crear-categoria/crear-categoria.compo
 import { PerfilComponent } from './perfil/perfil.component';
 import { PerfilAdmiComponent } from './perfil-admi/perfil-admi.component';
 import { MenuDesplegableAdmiComponent } from './menu-desplegable-admi/menu-desplegable-admi.component';
+import { CrearRetosComponent } from './crear-retos/crear-retos.component';
 
 
 
@@ -51,7 +52,8 @@ import { MenuDesplegableAdmiComponent } from './menu-desplegable-admi/menu-despl
     CrearCategoriaComponent,
     PerfilComponent,
     PerfilAdmiComponent,
-    MenuDesplegableAdmiComponent
+    MenuDesplegableAdmiComponent,
+    CrearRetosComponent
   ],
   imports: [
     BrowserModule,
