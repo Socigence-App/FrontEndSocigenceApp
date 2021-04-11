@@ -4,6 +4,8 @@ import { CrearCategoriaComponent } from './crear-categoria/crear-categoria.compo
 import { CrearPublicacionComponent } from './crear-publicacion/crear-publicacion.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { PerfilAdmiComponent } from './perfil-admi/perfil-admi.component';
+import { PerfilComponent } from './perfil/perfil.component';
 import { RegistroComponent } from './registro/registro.component';
 import { VerPublicacionesComponent } from './ver-publicaciones/ver-publicaciones.component';
 
@@ -15,7 +17,9 @@ const routes: Routes = [
   {path: 'registro', component: RegistroComponent},
   {path: 'crearPublicacion', component: CrearPublicacionComponent},
   {path: 'publicaciones', component: VerPublicacionesComponent},
-  {path: 'crearCategoria', component: CrearCategoriaComponent}
+  {path: 'crearCategoria', component: CrearCategoriaComponent},
+  {path: 'perfil', component: PerfilComponent},
+  {path: 'perfilAdmi', component: PerfilAdmiComponent}
 ];
 
 @NgModule({

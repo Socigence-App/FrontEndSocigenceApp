@@ -18,6 +18,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
+import {MatRadioModule} from '@angular/material/radio';
 
 import {ListboxModule} from 'primeng/listbox';
 
@@ -32,6 +33,9 @@ import { CrearPublicacionComponent } from './crear-publicacion/crear-publicacion
 import { HomeComponent } from './home/home.component';
 import { VerPublicacionesComponent } from './ver-publicaciones/ver-publicaciones.component';
 import { CrearCategoriaComponent } from './crear-categoria/crear-categoria.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { PerfilAdmiComponent } from './perfil-admi/perfil-admi.component';
+import { MenuDesplegableAdmiComponent } from './menu-desplegable-admi/menu-desplegable-admi.component';
 
 
 
@@ -44,7 +48,10 @@ import { CrearCategoriaComponent } from './crear-categoria/crear-categoria.compo
     CrearPublicacionComponent,
     HomeComponent,
     VerPublicacionesComponent,
-    CrearCategoriaComponent
+    CrearCategoriaComponent,
+    PerfilComponent,
+    PerfilAdmiComponent,
+    MenuDesplegableAdmiComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +71,8 @@ import { CrearCategoriaComponent } from './crear-categoria/crear-categoria.compo
     EditorModule,
     MatCardModule,
     HttpClientModule,
-    ListboxModule
+    ListboxModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

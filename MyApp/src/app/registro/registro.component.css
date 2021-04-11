@@ -37,6 +37,22 @@ h2{
     color: #34495E;
 }
 
+.tipoBox{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+  }
+
 @media only screen and (max-width: 840px){
     .general{
         width: 100%;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemePalette } from '@angular/material/core';
 import { User } from '../models/user.model';
 import { UserInfoService } from '../service/user-info.service';
 
@@ -10,6 +11,10 @@ import { UserInfoService } from '../service/user-info.service';
 export class RegistroComponent implements OnInit {
   hide = true;
   nuevoUsuario: User;
+  tipoUsuario!: string;
+  tipos: string[]=['Administrador', 'Normal'];
+  color: ThemePalette = 'accent';
+  tipoDoc: string[]=['Tarjeta de identidad', 'Cédula de ciudadanía', 'Pasaporte'];
 
 
   constructor(private UserInfoService: UserInfoService) { 

@@ -22,14 +22,9 @@
             <input matInput placeholder="Ex. juan123@gamil.com" [(ngModel)]="nuevoUsuario.email">
         </mat-form-field>
         <br>
-        <mat-form-field appearance="fill">
-            <mat-label>Tipo de documento</mat-label>
-            <mat-select disableRipple>
-              <mat-option value="1">Cédula de ciudadanía</mat-option>
-              <mat-option value="2">Tarjeta de identidad</mat-option>
-              <mat-option value="3">Cédula de extranjería</mat-option>
-            </mat-select>
-        </mat-form-field>
+        <div class="listboxDocumento">
+            <p-listbox [options]="tipoDoc" [(ngModel)]="nuevoUsuario.IdTipo" optionLabel="nombre" [style]="{'width':'15rem'}"></p-listbox>
+        </div>
         <br>
         <mat-form-field class="example-full-width">
             <mat-label>Numero de identificación</mat-label>
@@ -49,14 +44,18 @@
             </button>
         </mat-form-field>
         <br>
-        <mat-form-field appearance="fill">
-            <mat-label>Confirmar contraseña</mat-label>
-            <input matInput [type]="hide ? 'password' : 'text'"[(ngModel)]="nuevoUsuario.contrasena">
-            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-            </button>
-        </mat-form-field>
-        <br>
+        
+        <div class="contenido-buttons">
+            <div class="tipoBox">
+                <label id="example-radio-group-label">Elige tu tipo de usuario:</label>
+                <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="nuevoUsuario.usertipo">
+                <mat-radio-button class="example-radio-button" *ngFor="let tipo of tipos" [value]="tipo" [color]="color">
+                {{tipo}}
+                </mat-radio-button>
+                </mat-radio-group>
+                <div class="rolChoose">El rol escogido es: {{nuevoUsuario.usertipo}}</div>
+            </div>
+        </div>
         <button mat-raised-button color="accent" style="margin: 5px;" [routerLink]="['/home']">Atrás</button>
         <button mat-raised-button color="accent" [routerLink]="['/publicaciones']" (click)="crearUsuario()">Regístrate</button>
     </div>

@@ -38,8 +38,10 @@ export class LoginComponent implements OnInit {
           
           if (user[0].usertipo == 'Administrador') {
             console.log("Es admin");
+            this.link = "/perfilAdmi";
+            console.log("entro a la vista");
           } else {
-            this.link = "/publicaciones";
+            this.link = "/perfil";
           }
         } 
         else {
