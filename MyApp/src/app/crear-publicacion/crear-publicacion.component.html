@@ -4,29 +4,26 @@
         <div class="titulo">
             <h1>Realizar publicación</h1>
         </div>
+        
         <div class="publicacion">
-            <mat-form-field appearance="fill">
-                <mat-label>Selecciona la categoría</mat-label>
-                <mat-select disableRipple>
-                  <mat-option value="1">Option 1</mat-option>
-                  <mat-option value="2">Option 2</mat-option>
-                  <mat-option value="3">Option 3</mat-option>
-                </mat-select>
+            <br>
+            <mat-form-field class="example-full-width">
+            <mat-label>Titulo*</mat-label>
+            <input matInput placeholder="" [(ngModel)]="newPost.titulo">
             </mat-form-field>
             <br>
-            <div class="editor">
-            <p-editor [(ngModel)]="text" [style]="{'height':'150px'}"></p-editor>
+        
+            <div class="input-id-proyecto">
+                <p-listbox [options]="categorias" [(ngModel)]="selectedCategoria" optionLabel="nombre" [style]="{'width':'15rem'}"></p-listbox>
             </div>
             <br>
-            <h3>Añade una imagen a tu publicación</h3>
-            <div class="example-button-container">
-                <button mat-fab color="accent" aria-label="Example icon button with a delete icon">
-                  <mat-icon>add</mat-icon>
-                </button>
+
+            <div class="editor">
+            <p-editor [(ngModel)]="newPost.descripcion" [style]="{'height':'150px'}"></p-editor>
             </div>
             <br>
             <button mat-raised-button color="accent" [style]="{'margin':'10px'}" [routerLink]="['/publicaciones']">Atrás</button>
-            <button mat-raised-button color="accent" [routerLink]="['/publicaciones']">Publicar</button>
+            <button mat-raised-button color="accent" [routerLink]="['/publicaciones']" (click)="crearPost()">Publicar</button>
 
         </div>
     </div>

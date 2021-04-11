@@ -19,6 +19,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 
+import {ListboxModule} from 'primeng/listbox';
+
 import {EditorModule} from 'primeng/editor';
 
 import {HttpClientModule } from '@angular/common/http';
@@ -29,6 +31,7 @@ import { MenuDesplegableComponent } from './menu-desplegable/menu-desplegable.co
 import { CrearPublicacionComponent } from './crear-publicacion/crear-publicacion.component';
 import { HomeComponent } from './home/home.component';
 import { VerPublicacionesComponent } from './ver-publicaciones/ver-publicaciones.component';
+import { CrearCategoriaComponent } from './crear-categoria/crear-categoria.component';
 
 
 
@@ -40,7 +43,8 @@ import { VerPublicacionesComponent } from './ver-publicaciones/ver-publicaciones
     MenuDesplegableComponent,
     CrearPublicacionComponent,
     HomeComponent,
-    VerPublicacionesComponent
+    VerPublicacionesComponent,
+    CrearCategoriaComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +63,8 @@ import { VerPublicacionesComponent } from './ver-publicaciones/ver-publicaciones
     AccordionModule,
     EditorModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    ListboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

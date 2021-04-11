@@ -16,25 +16,31 @@ export class LoginComponent implements OnInit {
   username: String;
   contrasena: String;
   currentUser: User;
+  link: string;
 
   constructor(private userInfoService: UserInfoService){
     this.nuevoUsuario=new User();
     this.contrasena = new String;
     this.username = new String;
     this.currentUser = new User(); 
+    this.link = '/login';
   }
 
   public async loguear () {
-    let data;
     let usuario = await this.userInfoService.buscarUser(this.username).subscribe(
       async (user) => {
-        console.log(user[0]);
         if (user[0].contrasena == null) {
           console.log("Usuario no registrado");
         }
         else if(user[0].contrasena == this.contrasena) {
-          environment.User = this.currentUser;  
-          console.log("Ingreso con exito")
+          environment.User = user[0]; 
+          console.log("Ingreso con exito");
+          
+          if (user[0].usertipo == 'Administrador') {
+            console.log("Es admin");
+          } else {
+            this.link = "/publicaciones";
+          }
         } 
         else {
           console.log("Contraseña Incorrecta");
