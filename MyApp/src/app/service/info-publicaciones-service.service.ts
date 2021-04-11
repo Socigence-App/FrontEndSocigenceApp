@@ -15,4 +15,8 @@ export class InfoPublicacionesServiceService {
   createPost(newPost: Post){
     this.http.post(`${environment.apiUrl}post`,newPost).subscribe(post => console.log(post));
 }
+
+  getAllPosts():Observable<Post[]> {
+  return this.http.get<Post[]>(`${environment.apiUrl}post/`);
+}
 }

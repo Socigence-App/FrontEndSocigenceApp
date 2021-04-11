@@ -32,6 +32,7 @@ import { CrearPublicacionComponent } from './crear-publicacion/crear-publicacion
 import { HomeComponent } from './home/home.component';
 import { VerPublicacionesComponent } from './ver-publicaciones/ver-publicaciones.component';
 import { CrearCategoriaComponent } from './crear-categoria/crear-categoria.component';
+import { CrearRetosComponent } from './crear-retos/crear-retos.component';
 
 
 
@@ -44,7 +45,8 @@ import { CrearCategoriaComponent } from './crear-categoria/crear-categoria.compo
     CrearPublicacionComponent,
     HomeComponent,
     VerPublicacionesComponent,
-    CrearCategoriaComponent
+    CrearCategoriaComponent,
+    CrearRetosComponent
   ],
   imports: [
     BrowserModule,

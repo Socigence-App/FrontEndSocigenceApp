@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CrearCategoriaComponent } from './crear-categoria/crear-categoria.component';
 import { CrearPublicacionComponent } from './crear-publicacion/crear-publicacion.component';
+import { CrearRetosComponent } from './crear-retos/crear-retos.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'registro', component: RegistroComponent},
   {path: 'crearPublicacion', component: CrearPublicacionComponent},
   {path: 'publicaciones', component: VerPublicacionesComponent},
-  {path: 'crearCategoria', component: CrearCategoriaComponent}
+  {path: 'crearCategoria', component: CrearCategoriaComponent},
+  {path: 'crearReto', component: CrearRetosComponent}
 ];
 
 @NgModule({
