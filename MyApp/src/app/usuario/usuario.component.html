@@ -3,7 +3,8 @@
         <div class="contenido">
             <div class="tarjeta">
                 <h3>{{usuario.nombre}}</h3>
-                <button mat-raised-button color="accent" [style]="{'margin':'10px'}">Eliminar</button>
+                <h4>{{usuario.username}}</h4>
+                <button mat-raised-button color="accent" [style]="{'margin':'10px'}" (click)="eliminarUsuario()" [routerLink]="['/perfilAdmi']">Eliminar</button>
                 <button mat-raised-button color="primary">Editar</button>
             </div>
         </div>

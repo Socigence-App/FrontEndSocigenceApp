@@ -28,4 +28,11 @@ export class UserInfoService{
         return this.http.get <User[]>(`${environment.apiUrl}user`);
     }
 
+    deleteUser(idUser: String){
+        this.http.delete(`${environment.apiUrl}user/${idUser}`).subscribe((user=> {
+            console.log("Usuario con id: "+ idUser + " Eliminado")
+        }))
+
+    }
+
 }
