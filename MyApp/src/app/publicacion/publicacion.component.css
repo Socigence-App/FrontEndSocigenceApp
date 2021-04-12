@@ -7,20 +7,13 @@
     height: 100%;
 }
 
-h1{
-    font-family: fantasy;
-    font-size: 50px;
-    color: #1ABC9C;
-    text-align: center;
-    margin-top: 2%;
-}
-
 .example-card {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     border: #2E86C1 solid 1px;
 }
+
   
 .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
@@ -31,14 +24,6 @@ h1{
 @media only screen and (max-width: 840px){
     .general{
         width: 100%;
-    }
-
-    h1{
-        text-align: center;
-        font-family: fantasy;
-        padding: 10px;
-        margin-bottom: 2%;
-        font-size: 40px;
     }
 
     .example-card {

@@ -1,7 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Post } from '../models/post.model';
-import { User } from '../models/user.model';
-import { InfoPublicacionesServiceService } from '../service/info-publicaciones-service.service';
 
 @Component({
   selector: 'app-publicacion',
