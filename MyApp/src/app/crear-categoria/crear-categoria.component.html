@@ -1,15 +1,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<app-menu-desplegable>
+<app-menu-desplegable-admi>
     <div class="general">
         <div class="titulo">
             <h1>Crear categoría</h1>
         </div>
-        <div class="publicacion">
-            <br>
-            <br>
-            <br>
+        <br>
+        <div class="categoria">
             <mat-form-field class="example-full-width">
-            <mat-label>nombre*</mat-label>
+            <mat-label>Nombre de la categoria</mat-label>
             <input matInput placeholder="Ex. Social" [(ngModel)]="nuevaCategoria.nombre">
             </mat-form-field>
             <br>
@@ -19,10 +17,10 @@
             </div>
             <br>
             <br>
-            <button mat-raised-button color="accent" [style]="{'margin':'10px'}" [routerLink]="['/publicaciones']">Atrás</button>
-            <button mat-raised-button color="accent" [routerLink]="['/publicaciones']" (click)="crearCategoria()">Crear</button>
+            <button mat-raised-button color="accent" [style]="{'margin':'10px'}" [routerLink]="['/perfilAdmi']">Atrás</button>
+            <button mat-raised-button color="accent" [routerLink]="['/categorias']" (click)="crearCategoria()">Crear</button>
             
 
         </div>
     </div>
-</app-menu-desplegable>
+</app-menu-desplegable-admi>

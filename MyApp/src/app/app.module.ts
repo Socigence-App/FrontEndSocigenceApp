@@ -42,6 +42,8 @@ import { CategoriaComponent } from './categoria/categoria.component';
 import { VerCategoriasComponent } from './ver-categorias/ver-categorias.component';
 import { VerRetosComponent } from './ver-retos/ver-retos.component';
 import { RetoComponent } from './reto/reto.component';
+import { VerUsuariosComponent } from './ver-usuarios/ver-usuarios.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 
 
 
@@ -63,7 +65,9 @@ import { RetoComponent } from './reto/reto.component';
     CategoriaComponent,
     VerCategoriasComponent,
     VerRetosComponent,
-    RetoComponent
+    RetoComponent,
+    VerUsuariosComponent,
+    UsuarioComponent
   ],
   imports: [
     BrowserModule,

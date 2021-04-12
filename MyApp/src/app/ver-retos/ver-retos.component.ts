@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Reto } from '../models/reto.model';
+import { InfoRetosService } from '../service/info-retos.service';
 
 @Component({
   selector: 'app-ver-retos',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VerRetosComponent implements OnInit {
 
-  constructor() { }
+  retos: Array<Reto>;
+
+  constructor(private InfoRetosService: InfoRetosService) { 
+    this.retos = new Array <Reto>();
+  }
 
   ngOnInit(): void {
+    this.InfoRetosService.getAllRetos().subscribe((reto)=> {
+      this.retos = reto;
+      console.log(this.retos);
+    })
   }
 
 }

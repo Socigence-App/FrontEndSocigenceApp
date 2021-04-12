@@ -71,6 +71,11 @@ h3{
     background-color: #D4E6F1;
 }
 
+.opcion4{
+    padding: 5px;
+    background-color: #ABEBC6;
+}
+
 @media only screen and (max-width: 840px){
     .general{
         width: 100%;

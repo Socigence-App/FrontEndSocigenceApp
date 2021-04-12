@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Reto } from '../models/reto.model';
 
 @Component({
   selector: 'app-reto',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reto.component.css']
 })
 export class RetoComponent implements OnInit {
+
+  @Input()
+
+  reto!: Reto;
 
   constructor() { }
 

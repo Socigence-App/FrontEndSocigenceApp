@@ -5,25 +5,22 @@
             <h1>Crear Reto</h1>
         </div>
         
-        <div class="publicacion">
-            <br>
+        <div class="reto">
             <mat-form-field class="example-full-width">
-            <mat-label>Titulo*</mat-label>
+            <mat-label>Titulo del reto</mat-label>
             <input matInput placeholder="" [(ngModel)]="newReto.titulo">
             </mat-form-field>
             <br>
-        
-            <div class="input-id-proyecto">
+            <div class="listaCategorias">
                 <p-listbox [options]="categorias" [(ngModel)]="selectedCategoria" optionLabel="nombre" [style]="{'width':'15rem'}"></p-listbox>
             </div>
             <br>
-
             <div class="editor">
             <p-editor [(ngModel)]="newReto.descripcion" [style]="{'height':'150px'}"></p-editor>
             </div>
             <br>
-            <button mat-raised-button color="accent" [style]="{'margin':'10px'}" [routerLink]="['/publicaciones']">Atrás</button>
-            <button mat-raised-button color="accent" [routerLink]="['/publicaciones']" (click)="crearReto()">Crear</button>
+            <button mat-raised-button color="accent" [style]="{'margin':'10px'}" [routerLink]="['/perfilAdmi']">Atrás</button>
+            <button mat-raised-button color="accent" [routerLink]="['/perfilAdmi']" (click)="crearReto()">Crear</button>
 
         </div>
     </div>

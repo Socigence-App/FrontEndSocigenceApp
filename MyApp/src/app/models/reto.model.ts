@@ -2,6 +2,6 @@ export class Reto{
     _id!: string;
     titulo!: string;
     descripcion!: string;
-    user!: number;
+    user!: string;
     categoria!: string;
 }

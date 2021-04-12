@@ -1,1 +1,13 @@
-<p>ver-retos works!</p>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<app-menu-desplegable-admi>
+    <div class="general">
+        <div class="titulo">
+            <h1>Retos</h1>
+        </div>
+        <br>
+        <div *ngFor= 'let reto of retos'>
+          <app-reto [reto]="reto"></app-reto>
+        </div>
+    </div>
+</app-menu-desplegable-admi>
+

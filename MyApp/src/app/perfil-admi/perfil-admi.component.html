@@ -34,10 +34,16 @@
                 Ver publicaciones
             </div>
             <div class="opcion3">
-                <button mat-mini-fab color="accent" aria-label="Example icon button with a delete icon">
+                <button mat-mini-fab color="accent" aria-label="Example icon button with a delete icon" [routerLink]="['/crearCategoria']">
                     <mat-icon>add</mat-icon>
                 </button>
-                Ver categorias
+                Crear categorias
+            </div>
+            <div class="opcion4">
+                <button mat-mini-fab color="accent" aria-label="Example icon button with a delete icon" [routerLink]="['/crearReto']">
+                    <mat-icon>add</mat-icon>
+                </button>
+                Crear retos
             </div>
             
             <button mat-raised-button color="accent"></button>

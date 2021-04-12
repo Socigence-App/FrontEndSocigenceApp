@@ -17,4 +17,9 @@ export class InfoRetosService {
     this.http.post(`${environment.apiUrl}reto`,newReto).subscribe(reto => console.log(reto))
 }
 
+  getAllRetos():Observable<Reto[]>{
+    return this.http.get<Reto[]>(`${environment.apiUrl}reto/`);
+
+  }
+
 }

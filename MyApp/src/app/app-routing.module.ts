@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { PerfilAdmiComponent } from './perfil-admi/perfil-admi.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { RegistroComponent } from './registro/registro.component';
+import { RetoComponent } from './reto/reto.component';
 import { VerCategoriasComponent } from './ver-categorias/ver-categorias.component';
 import { VerPublicacionesComponent } from './ver-publicaciones/ver-publicaciones.component';
 
@@ -23,7 +24,8 @@ const routes: Routes = [
   {path: 'perfil', component: PerfilComponent},
   {path: 'perfilAdmi', component: PerfilAdmiComponent},
   {path: 'crearReto', component: CrearRetosComponent},
-  {path: 'categorias', component: VerCategoriasComponent}
+  {path: 'categorias', component: VerCategoriasComponent},
+  {path: 'retos', component: RetoComponent}
 ];
 
 @NgModule({

@@ -24,8 +24,8 @@ export class UserInfoService{
         return this.http.get<User[]>(`${environment.apiUrl}user/${username}`);
     }
   
-    getAllUsers (): Observable<{data: User[]}> {
-        return this.http.get <{data: User[]}>(`${environment.apiUrl}user`);
+    getAllUsers (): Observable<User[]> {
+        return this.http.get <User[]>(`${environment.apiUrl}user`);
     }
 
 }
