@@ -3,7 +3,13 @@
         <div class="contenido">
             <div class="tarjeta">
                 <h3>{{usuario.nombre}}</h3>
-                <h4>{{usuario.username}}</h4>
+                <p>Nombre de usuario: {{usuario.username}}</p>
+                <p>Correo: {{usuario.email}}</p>
+                <p>Tipo de identificacion: {{usuario.IdTipo}}</p>
+                <p>Numero: {{usuario.IdNumero}}</p>
+                <p>Telefono: {{usuario.Telefono}}</p>
+                <p>Contraseña: {{usuario.contrasena}}</p>
+                <p>Tipo de usuario: {{usuario.usertipo}}</p>
                 <button mat-raised-button color="accent" [style]="{'margin':'10px'}" (click)="eliminarUsuario()" [routerLink]="['/perfilAdmi']">Eliminar</button>
                 <button mat-raised-button color="primary">Editar</button>
             </div>
