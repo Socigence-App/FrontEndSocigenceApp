@@ -23,4 +23,11 @@ export class CategoriaServiceService {
   buscarCategoria (_id: String):Observable<Categoria[]> {
     return this.http.get<Categoria[]>(`${environment.apiUrl}categoria/${_id}`);
   }
+  
+  deleteCategoria(idCategoria: String){
+    this.http.delete(`${environment.apiUrl}categoria/${idCategoria}`).subscribe((categoria)=>{
+      console.log("Categoria con id: " + idCategoria + " Eliminado")
+    })
+
+  }
 }

@@ -2,10 +2,19 @@
     <div class="general">
         <div class="contenido">
             <div class="tarjeta">
-                <h3>holi</h3>
-                <button mat-raised-button color="accent" [style]="{'margin':'10px'}">Eliminar</button>
+                <h3>{{usuario.nombre}}</h3>
+                <p> <b>Nombre de usuario:</b> {{usuario.username}}</p>
+                <p> <b>Correo:</b> {{usuario.email}}</p>
+                <p> <b>Tipo de identificacion:</b> {{usuario.IdTipo}}</p>
+                <p> <b>Numero:</b> {{usuario.IdNumero}}</p>
+                <p> <b>Telefono:</b> {{usuario.Telefono}}</p>
+                <p> <b>Contraseña:</b> {{usuario.contrasena}}</p>
+                <p> <b>Tipo de usuario:</b>  {{usuario.usertipo}}</p>
+                <button mat-raised-button color="accent" [style]="{'margin':'10px'}" (click)="eliminarUsuario()" [routerLink]="['/perfilAdmi']">Eliminar</button>
                 <button mat-raised-button color="primary">Editar</button>
             </div>
         </div>
     </div>
+
+    
 

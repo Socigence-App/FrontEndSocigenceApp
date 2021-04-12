@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Categoria } from '../models/categoria.model';
+import { CategoriaServiceService } from '../service/categoria-service.service';
 
 @Component({
   selector: 'app-categoria',
@@ -13,9 +14,13 @@ export class CategoriaComponent implements OnInit {
   categoria!: Categoria;
   
 
-  constructor() { }
+  constructor(private CategoriaServiceService: CategoriaServiceService) {}
 
   ngOnInit(): void {
+  }
+
+  eliminarCategoria(){
+    this.CategoriaServiceService.deleteCategoria(this.categoria._id);
   }
 
 }

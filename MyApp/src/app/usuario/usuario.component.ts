@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { User } from '../models/user.model';
+import { UserInfoService } from '../service/user-info.service';
 
 @Component({
   selector: 'app-usuario',
@@ -12,9 +13,13 @@ export class UsuarioComponent implements OnInit {
 
   usuario!: User;
 
-  constructor() { }
+  constructor(private UserInfoService: UserInfoService) { }
 
   ngOnInit(): void {
+  }
+
+  eliminarUsuario(){
+    this.UserInfoService.deleteUser(this.usuario._id);
   }
 
 }
