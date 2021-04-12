@@ -23,7 +23,7 @@
         </mat-form-field>
         <br>
         <div class="listboxDocumento">
-            <p-listbox [options]="tipoDoc" [(ngModel)]="nuevoUsuario.IdTipo" optionLabel="nombre" [style]="{'width':'15rem'}">Cedula</p-listbox>
+            <p-listbox [options]="tipoDoc" [(ngModel)]="nuevoUsuario.IdTipo" optionLabel="IdTipo" [style]="{'width':'15rem'}">Cedula</p-listbox>
         </div>
         <br>
         <mat-form-field class="example-full-width">
@@ -57,7 +57,7 @@
             </div>
         </div>
         <button mat-raised-button color="accent" style="margin: 5px;" [routerLink]="['/home']">Atrás</button>
-        <button mat-raised-button color="accent" [routerLink]="['/publicaciones']" (click)="crearUsuario()">Regístrate</button>
+        <button mat-raised-button color="accent" [routerLink]="['/login']" (click)="crearUsuario()">Regístrate</button>
     </div>
 </div>
 

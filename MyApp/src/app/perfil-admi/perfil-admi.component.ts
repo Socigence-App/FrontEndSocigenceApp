@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {CategoriaServiceService} from '../service/categoria-service.service'
+import { environment } from '../environment/env';
 
 @Component({
   selector: 'app-perfil-admi',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilAdmiComponent implements OnInit {
 
-  constructor() { }
+  constructor(private CategoriaServiceService: CategoriaServiceService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
+    this.CategoriaServiceService.getAllCategorias().subscribe((categoria)=> {
+    environment.Categorias = categoria
+    })
   }
 
 }
