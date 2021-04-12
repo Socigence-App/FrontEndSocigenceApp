@@ -34,8 +34,8 @@ export class CrearPublicacionComponent implements OnInit {
 
 
   public crearPost(){
-    this.newPost.user = environment.User._id;
-    this.newPost.categoria = this.selectedCategoria._id;
+    this.newPost.user = environment.User;
+    this.newPost.categoria = this.selectedCategoria;
     this.newPost.puntuacion = 0;
     this.InfoPublicacionesServiceService.createPost(this.newPost)
   }

@@ -19,4 +19,8 @@ export class CategoriaServiceService {
    getAllCategorias(): Observable<Categoria[]>{
     return this.http.get<Categoria[]>(`${environment.apiUrl}categoria/`);
   }
+
+  buscarCategoria (_id: String):Observable<Categoria[]> {
+    return this.http.get<Categoria[]>(`${environment.apiUrl}categoria/${_id}`);
+  }
 }

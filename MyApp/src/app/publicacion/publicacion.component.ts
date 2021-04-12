@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Categoria } from '../models/categoria.model';
 import { Post } from '../models/post.model';
 
 @Component({
@@ -10,14 +11,11 @@ export class PublicacionComponent implements OnInit {
   
   @Input()
 
-  post!:Post; 
-
-  constructor() {
-
-   }
+  post!:Post;
 
 
   ngOnInit(): void {
+  
     
   }
 
