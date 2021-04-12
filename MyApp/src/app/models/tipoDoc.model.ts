@@ -1,3 +1,3 @@
 export class TipoDoc{
-    nombre!: string;
+    IdTipo!: string;
 }

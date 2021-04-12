@@ -6,7 +6,7 @@
                 <p>{{reto['user'] | json}}</p>
                 <p>{{reto['categoria'] | json}}</p>
                 <div [innerHtml]="reto.descripcion"></div>
-                <button mat-raised-button color="accent" [style]="{'margin':'10px'}">Eliminar</button>
+                <button mat-raised-button color="accent" [style]="{'margin':'10px'}" (click)="eliminarReto()" [routerLink]="['/perfilAdmi']">Eliminar</button>
                 <button mat-raised-button color="primary">Editar</button>
             </div>
         </div>

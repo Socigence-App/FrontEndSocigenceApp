@@ -22,4 +22,11 @@ export class InfoRetosService {
 
   }
 
+  deleteReto(idReto: String) {
+    this.http.delete(`${environment.apiUrl}reto/${idReto}`).subscribe((reto=>{
+      console.log("reto con id : " + idReto + " Eliminado")
+    }))
+  }
+
+
 }

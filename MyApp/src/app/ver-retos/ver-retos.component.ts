@@ -9,7 +9,7 @@ import { InfoRetosService } from '../service/info-retos.service';
 })
 export class VerRetosComponent implements OnInit {
 
-  retos: Array<Reto>;
+  retos: Reto[];
 
   constructor(private InfoRetosService: InfoRetosService) { 
     this.retos = new Array <Reto>();
@@ -21,5 +21,8 @@ export class VerRetosComponent implements OnInit {
       console.log(this.retos);
     })
   }
+
+  
+
 
 }

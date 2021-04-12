@@ -21,7 +21,7 @@ export class RegistroComponent implements OnInit {
 
   constructor(private UserInfoService: UserInfoService) { 
     this.nuevoUsuario= new User();
-    this.tipoDoc =[{nombre:'Tarjeta de identidad'}, {nombre:'Cédula de ciudadanía'}, {nombre:'Pasaporte'}]
+    this.tipoDoc =[{IdTipo:'Tarjeta de identidad'}, {IdTipo:'Cédula de ciudadanía'}, {IdTipo:'Pasaporte'}]
   }
 
   ngOnInit(): void {

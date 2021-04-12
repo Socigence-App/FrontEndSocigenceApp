@@ -1,5 +1,6 @@
 import { Categoria } from "../models/categoria.model";
 import { Post } from "../models/post.model";
+import { Reto } from "../models/reto.model";
 import { User } from "../models/user.model";
 
 export const environment ={
@@ -8,5 +9,6 @@ export const environment ={
     Users: Array <User>(),
     Post: new Post,
     Posts: Array <Post>(),
-    Categorias: Array <Categoria>()
+    Categorias: Array <Categoria>(),
+    retos: Array<Reto>()
 }
