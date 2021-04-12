@@ -5,25 +5,8 @@
             <h1>Publicaciones</h1>
         </div>
         <br>
-        <div class="publicacion">
-            <mat-card class="example-card">
-                <mat-card-header>
-                  <div mat-card-avatar class="example-header-image"></div>
-                  <mat-card-title>{{posts[2].titulo}}</mat-card-title>
-                  <mat-card-subtitle>{{posts[2]['user'] | json}}</mat-card-subtitle>
-                </mat-card-header>
-                <mat-card-content>
-                  <div [innerHtml]="posts[2].descripcion"></div>
-                </mat-card-content>
-                <mat-card-actions>
-                  <button mat-raised-button color="accent">LIKE</button>
-                  <button mat-raised-button color="primary">SHARE</button>
-                </mat-card-actions>
-            </mat-card>
-            <br>
+        <div *ngFor= 'let post of posts'>
+          <app-publicacion [post]="post"></app-publicacion>
         </div>
     </div>
-    <button mat-raised-button color="accent" [routerLink]="['/crearCategoria']" >Crear Categoria</button>
-    <button mat-raised-button color="accent" [routerLink]="['/crearPublicacion']" >Crear publicacion</button>
-    <button mat-raised-button color="accent" [routerLink]="['/crearReto']" >Crear Reto</button>
 </app-menu-desplegable>

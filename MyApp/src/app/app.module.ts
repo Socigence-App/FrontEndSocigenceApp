@@ -37,6 +37,8 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { PerfilAdmiComponent } from './perfil-admi/perfil-admi.component';
 import { MenuDesplegableAdmiComponent } from './menu-desplegable-admi/menu-desplegable-admi.component';
 import { CrearRetosComponent } from './crear-retos/crear-retos.component';
+import { PublicacionComponent } from './publicacion/publicacion.component';
+import { CategoriaComponent } from './categoria/categoria.component';
 
 
 
@@ -53,7 +55,9 @@ import { CrearRetosComponent } from './crear-retos/crear-retos.component';
     PerfilComponent,
     PerfilAdmiComponent,
     MenuDesplegableAdmiComponent,
-    CrearRetosComponent
+    CrearRetosComponent,
+    PublicacionComponent,
+    CategoriaComponent
   ],
   imports: [
     BrowserModule,

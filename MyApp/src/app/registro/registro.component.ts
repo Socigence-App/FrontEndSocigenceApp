@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
+import { TipoDoc } from '../models/tipoDoc.model';
 import { User } from '../models/user.model';
 import { UserInfoService } from '../service/user-info.service';
+
 
 @Component({
   selector: 'app-registro',
@@ -14,11 +16,12 @@ export class RegistroComponent implements OnInit {
   tipoUsuario!: string;
   tipos: string[]=['Administrador', 'Normal'];
   color: ThemePalette = 'accent';
-  tipoDoc: string[]=['Tarjeta de identidad', 'Cédula de ciudadanía', 'Pasaporte'];
+  tipoDoc:TipoDoc[];
 
 
   constructor(private UserInfoService: UserInfoService) { 
     this.nuevoUsuario= new User();
+    this.tipoDoc =[{nombre:'Tarjeta de identidad'}, {nombre:'Cédula de ciudadanía'}, {nombre:'Pasaporte'}]
   }
 
   ngOnInit(): void {

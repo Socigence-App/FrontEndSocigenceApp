@@ -29,6 +29,7 @@ export class LoginComponent implements OnInit {
   public async loguear () {
     let usuario = await this.userInfoService.buscarUser(this.username).subscribe(
       async (user) => {
+        console.log(user)
         if (user[0].contrasena == null) {
           console.log("Usuario no registrado");
         }
