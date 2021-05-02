@@ -44,6 +44,9 @@ import { VerRetosComponent } from './ver-retos/ver-retos.component';
 import { RetoComponent } from './reto/reto.component';
 import { VerUsuariosComponent } from './ver-usuarios/ver-usuarios.component';
 import { UsuarioComponent } from './usuario/usuario.component';
+import { RecompensaComponent } from './recompensa/recompensa.component';
+import { VerRecompensasComponent } from './ver-recompensas/ver-recompensas.component';
+import { CrearRecompensaComponent } from './crear-recompensa/crear-recompensa.component';
 
 
 
@@ -67,7 +70,10 @@ import { UsuarioComponent } from './usuario/usuario.component';
     VerRetosComponent,
     RetoComponent,
     VerUsuariosComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    RecompensaComponent,
+    VerRecompensasComponent,
+    CrearRecompensaComponent
   ],
   imports: [
     BrowserModule,

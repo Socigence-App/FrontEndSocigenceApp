@@ -1,0 +1,13 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<app-menu-desplegable-admi>
+    <div class="general">
+        <div class="titulo">
+            <h1>Recompensas</h1>
+        </div>
+        <br>
+        <div *ngFor= 'let recompensa of recompensas'>
+          <app-recompensa [recompensa]="recompensa"></app-recompensa>
+        </div>
+    </div>
+</app-menu-desplegable-admi>
+

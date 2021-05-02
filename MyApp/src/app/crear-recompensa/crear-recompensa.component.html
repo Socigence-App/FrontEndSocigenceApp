@@ -2,25 +2,26 @@
 <app-menu-desplegable-admi>
     <div class="general">
         <div class="titulo">
-            <h1>Crear categoría</h1>
+            <h1>Crear recompensa</h1>
         </div>
         <br>
-        <div class="categoria">
+        <div class="recompensa">
             <mat-form-field class="example-full-width">
-            <mat-label>Nombre de la categoria</mat-label>
-            <input matInput placeholder="Ex. Social" [(ngModel)]="nuevaCategoria.nombre">
+            <mat-label>Nombre de la recompensa</mat-label>
+            <input matInput [(ngModel)]="nuevaRecompensa.nombre">
             </mat-form-field>
             <br>
             <br>
             <div class="editor">
-            <p-editor [(ngModel)]="nuevaCategoria.descripcion" [style]="{'height':'150px'}"></p-editor>
+            <p-editor [(ngModel)]="nuevaRecompensa.descripcion" [style]="{'height':'150px'}"></p-editor>
             </div>
             <br>
             <br>
             <button mat-raised-button color="accent" [style]="{'margin':'10px'}" [routerLink]="['/perfilAdmi']">Atrás</button>
-            <button mat-raised-button color="accent" [routerLink]="['/perfilAdmi']" (click)="crearCategoria()">Crear</button>
+            <button mat-raised-button color="accent" [routerLink]="['/perfilAdmi']" (click)="crearRecompensa()">Crear</button>
             
 
         </div>
     </div>
 </app-menu-desplegable-admi>
+

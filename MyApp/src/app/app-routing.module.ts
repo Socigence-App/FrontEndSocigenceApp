@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CrearCategoriaComponent } from './crear-categoria/crear-categoria.component';
 import { CrearPublicacionComponent } from './crear-publicacion/crear-publicacion.component';
+import { CrearRecompensaComponent } from './crear-recompensa/crear-recompensa.component';
 import { CrearRetosComponent } from './crear-retos/crear-retos.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -10,6 +11,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { RegistroComponent } from './registro/registro.component';
 import { VerCategoriasComponent } from './ver-categorias/ver-categorias.component';
 import { VerPublicacionesComponent } from './ver-publicaciones/ver-publicaciones.component';
+import { VerRecompensasComponent } from './ver-recompensas/ver-recompensas.component';
 import { VerRetosComponent } from './ver-retos/ver-retos.component';
 import { VerUsuariosComponent } from './ver-usuarios/ver-usuarios.component';
 
@@ -27,7 +29,9 @@ const routes: Routes = [
   {path: 'crearReto', component: CrearRetosComponent},
   {path: 'categorias', component: VerCategoriasComponent},
   {path: 'retos', component: VerRetosComponent},
-  {path: 'usuarios', component: VerUsuariosComponent}
+  {path: 'usuarios', component: VerUsuariosComponent},
+  {path: 'recompensas', component: VerRecompensasComponent},
+  {path: 'crearRecompensa', component: CrearRecompensaComponent}
 ];
 
 @NgModule({

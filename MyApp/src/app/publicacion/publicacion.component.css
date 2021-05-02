@@ -20,6 +20,49 @@
     background-size: cover;
 }
 
+.puntuacion{
+  text-align: left;
+}
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+    font-size: 30px;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+    font-size: 30px;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+
 
 @media only screen and (max-width: 840px){
     .general{

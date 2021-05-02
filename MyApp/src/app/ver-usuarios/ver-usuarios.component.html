@@ -8,6 +8,9 @@
         <div *ngFor= 'let usuario of usuarios'>
           <app-usuario [usuario]="usuario"></app-usuario>
         </div>
+        <div class="boton">
+            <button mat-raised-button color="primary" [routerLink]="['/perfilAdmi']">Atrás</button>
+        </div>
     </div>
 </app-menu-desplegable-admi>
 

@@ -1,5 +1,6 @@
 import { Categoria } from "../models/categoria.model";
 import { Post } from "../models/post.model";
+import { Recompensa } from "../models/recompensa.model";
 import { Reto } from "../models/reto.model";
 import { User } from "../models/user.model";
 
@@ -10,5 +11,7 @@ export const environment ={
     Post: new Post,
     Posts: Array <Post>(),
     Categorias: Array <Categoria>(),
-    retos: Array<Reto>()
+    retos: Array<Reto>(),
+    Recompensa: new Recompensa,
+    Recompensas: Array <Recompensa>()
 }
