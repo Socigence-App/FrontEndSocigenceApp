@@ -52,6 +52,7 @@ import { PublicacionAdmiComponent } from './publicacion-admi/publicacion-admi.co
 import { VerPublicacionesAdmiComponent } from './ver-publicaciones-admi/ver-publicaciones-admi.component';
 import { VerCategoriasAdmiComponent } from './ver-categorias-admi/ver-categorias-admi.component';
 import { CategoriaAdmiComponent } from './categoria-admi/categoria-admi.component';
+import { EditarCategoriaComponent } from './editar-categoria/editar-categoria.component';
 
 
 
@@ -83,7 +84,8 @@ import { CategoriaAdmiComponent } from './categoria-admi/categoria-admi.componen
     PublicacionAdmiComponent,
     VerPublicacionesAdmiComponent,
     VerCategoriasAdmiComponent,
-    CategoriaAdmiComponent
+    CategoriaAdmiComponent,
+    EditarCategoriaComponent
   ],
   imports: [
     BrowserModule,

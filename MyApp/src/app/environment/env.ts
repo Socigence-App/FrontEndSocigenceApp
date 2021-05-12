@@ -10,6 +10,7 @@ export const environment ={
     Users: Array <User>(),
     Post: new Post,
     Posts: Array <Post>(),
+    Categoria: new Categoria,
     Categorias: Array <Categoria>(),
     retos: Array<Reto>(),
     Recompensa: new Recompensa,

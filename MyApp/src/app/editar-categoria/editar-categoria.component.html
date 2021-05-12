@@ -1,0 +1,27 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<app-menu-desplegable-admi>
+    <div class="general">
+        <div class="titulo">
+            <h1>Editar categoría</h1>
+        </div>
+        <br>
+        <div class="categoria">
+            <mat-form-field class="example-full-width">
+            <mat-label>Nombre de la categoria</mat-label>
+            <input matInput placeholder="Ex. Social" [(ngModel)]="currentCategoria.nombre">
+            </mat-form-field>
+            <br>
+            <br>
+            <div class="editor">
+            <p-editor [(ngModel)]="currentCategoria.descripcion" [style]="{'height':'150px'}"></p-editor>
+            </div>
+            <br>
+            <br>
+            <button mat-raised-button color="primary" [style]="{'margin':'10px'}" [routerLink]="['/perfilAdmi']">Atrás</button>
+            <button mat-raised-button color="accent" [routerLink]="['/perfilAdmi']" (click)="editarCategoria()">Actualizar</button>
+            
+
+        </div>
+    </div>
+</app-menu-desplegable-admi>
+

@@ -30,4 +30,9 @@ export class CategoriaServiceService {
     })
 
   }
+
+  updateCategoria(categoria: Categoria){
+    this.http.put(`${environment.apiUrl}categoria/${categoria._id}`, categoria).subscribe(categoria => console.log(categoria));
+    console.log("Categoria actualziada");
+  }
 }

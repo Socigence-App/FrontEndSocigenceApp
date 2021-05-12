@@ -5,7 +5,7 @@
                 <h3>{{categoria.nombre}}</h3>
                 <div [innerHtml]="categoria.descripcion"></div>
                 <button mat-raised-button color="accent" [style]="{'margin':'10px'}" (click)="eliminarCategoria()" [routerLink]="['/perfilAdmi']">Eliminar</button>
-                <button mat-raised-button color="primary">Editar</button>
+                <button mat-raised-button color="primary" [routerLink]="['/editarCategoria']" (click)="editar(categoria)">Editar</button>
             </div>
         </div>
     </div>

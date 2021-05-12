@@ -4,6 +4,7 @@ import { CrearCategoriaComponent } from './crear-categoria/crear-categoria.compo
 import { CrearPublicacionComponent } from './crear-publicacion/crear-publicacion.component';
 import { CrearRecompensaComponent } from './crear-recompensa/crear-recompensa.component';
 import { CrearRetosComponent } from './crear-retos/crear-retos.component';
+import { EditarCategoriaComponent } from './editar-categoria/editar-categoria.component';
 import { EditarPublicacionComponent } from './editar-publicacion/editar-publicacion.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -37,7 +38,8 @@ const routes: Routes = [
   {path: 'crearRecompensa', component: CrearRecompensaComponent},
   {path: 'editarPost', component: EditarPublicacionComponent},
   {path: 'publicacionesAdmi', component: VerPublicacionesAdmiComponent},
-  {path: 'categoriasAdmi', component: VerCategoriasAdmiComponent}
+  {path: 'categoriasAdmi', component: VerCategoriasAdmiComponent},
+  {path: 'editarCategoria', component: EditarCategoriaComponent}
 ];
 
 @NgModule({
