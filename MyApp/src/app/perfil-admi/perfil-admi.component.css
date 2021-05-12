@@ -49,7 +49,7 @@ h2{
 
 h3{
     font-family: fantasy;
-    color: #EC407A;
+    color: #42A5F5;
     text-align: center;
     font-size: 25px;
     padding: 5px;
@@ -58,27 +58,27 @@ h3{
 
 .opcion1{
     padding: 5px;
-    background-color: #D4E6F1;
+    background-color: #D1C4E9;
 }
 
 .opcion2{
     padding: 5px;
-    background-color: #ABEBC6;
+    background-color: #FFCDD2;
 }
 
 .opcion3{
     padding: 5px;
-    background-color: #D4E6F1;
+    background-color: #D1C4E9;
 }
 
 .opcion4{
     padding: 5px;
-    background-color: #ABEBC6;
+    background-color: #FFCDD2;
 }
 
 .opcion5{
     padding: 5px;
-    background-color: #D4E6F1;
+    background-color: #D1C4E9;
 }
 
 @media only screen and (max-width: 840px){

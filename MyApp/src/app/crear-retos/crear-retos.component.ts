@@ -31,7 +31,7 @@ export class CrearRetosComponent implements OnInit {
   }
 
   crearReto() {
-    this.newReto.categoria = this.selectedCategoria._id;
+    this.newReto.categoria = this.selectedCategoria;
     this.InfoRetosService.createReto(this.newReto)
   }
 }

@@ -1,5 +1,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<app-menu-desplegable-admi>
+<app-menu-desplegable>
     <div class="general">
         <div class="titulo">
             <h1>Categorias</h1>
@@ -8,5 +8,8 @@
         <div *ngFor= 'let categoria of categorias'>
           <app-categoria [categoria]="categoria"></app-categoria>
         </div>
+        <div class="boton">
+            <button mat-raised-button color="primary" [routerLink]="['/perfil']">Atrás</button>
+        </div>
     </div>
-</app-menu-desplegable-admi>
+</app-menu-desplegable>

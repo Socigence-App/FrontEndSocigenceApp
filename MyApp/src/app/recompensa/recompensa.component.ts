@@ -18,5 +18,6 @@ export class RecompensaComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  
 }

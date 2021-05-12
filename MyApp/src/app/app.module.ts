@@ -47,6 +47,11 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { RecompensaComponent } from './recompensa/recompensa.component';
 import { VerRecompensasComponent } from './ver-recompensas/ver-recompensas.component';
 import { CrearRecompensaComponent } from './crear-recompensa/crear-recompensa.component';
+import { EditarPublicacionComponent } from './editar-publicacion/editar-publicacion.component';
+import { PublicacionAdmiComponent } from './publicacion-admi/publicacion-admi.component';
+import { VerPublicacionesAdmiComponent } from './ver-publicaciones-admi/ver-publicaciones-admi.component';
+import { VerCategoriasAdmiComponent } from './ver-categorias-admi/ver-categorias-admi.component';
+import { CategoriaAdmiComponent } from './categoria-admi/categoria-admi.component';
 
 
 
@@ -73,7 +78,12 @@ import { CrearRecompensaComponent } from './crear-recompensa/crear-recompensa.co
     UsuarioComponent,
     RecompensaComponent,
     VerRecompensasComponent,
-    CrearRecompensaComponent
+    CrearRecompensaComponent,
+    EditarPublicacionComponent,
+    PublicacionAdmiComponent,
+    VerPublicacionesAdmiComponent,
+    VerCategoriasAdmiComponent,
+    CategoriaAdmiComponent
   ],
   imports: [
     BrowserModule,

@@ -2,11 +2,11 @@
 <app-menu-desplegable-admi>
     <div class="general">
         <div class="titulo">
-            <h1>Retos</h1>
+            <h1>Categorias</h1>
         </div>
         <br>
-        <div *ngFor= 'let reto of retos'>
-          <app-reto [reto]="reto"></app-reto>
+        <div *ngFor= 'let categoria of categorias'>
+          <app-categoria-admi [categoria]="categoria"></app-categoria-admi>
         </div>
         <div class="boton">
             <button mat-raised-button color="primary" [routerLink]="['/perfilAdmi']">Atrás</button>

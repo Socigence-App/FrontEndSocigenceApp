@@ -4,12 +4,12 @@ import { Post } from '../models/post.model';
 
 
 @Component({
-  selector: 'app-publicacion',
-  templateUrl: './publicacion.component.html',
-  styleUrls: ['./publicacion.component.css']
+  selector: 'app-publicacion-admi',
+  templateUrl: './publicacion-admi.component.html',
+  styleUrls: ['./publicacion-admi.component.css']
 })
-export class PublicacionComponent implements OnInit {
-  
+export class PublicacionAdmiComponent implements OnInit {
+
   @Input()
 
   post!:Post;
@@ -24,7 +24,5 @@ export class PublicacionComponent implements OnInit {
   editar(post:Post){
     environment.Post = post;
   }
-
-  
 
 }

@@ -19,4 +19,9 @@ export class InfoPublicacionesServiceService {
   getAllPosts():Observable<Post[]> {
   return this.http.get<Post[]>(`${environment.apiUrl}post/`);
 }
+
+updatePost(post: Post){
+  this.http.put(`${environment.apiUrl}post/${post._id}`, post).subscribe(post => console.log(post));
+  console.log("Publicacion actualizada")
+}
 }

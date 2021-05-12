@@ -13,10 +13,10 @@ export class RecompensaServiceService {
   constructor(private http: HttpClient) { }
 
   createRecompensa(newRecompensa: Recompensa){
-    this.http.post(`${environment.apiUrl}recompensa`, newRecompensa).subscribe(recompensa => console.log(recompensa))
+    this.http.post(`${environment.apiUrl}recom`, newRecompensa).subscribe(recompensa => console.log(recompensa))
   }
 
   getAllRecompensas(): Observable<Recompensa[]>{
-    return this.http.get<Recompensa[]>(`${environment.apiUrl}recompensa/`);
+    return this.http.get<Recompensa[]>(`${environment.apiUrl}recom/`);
   }
 }

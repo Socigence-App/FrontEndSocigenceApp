@@ -3,8 +3,7 @@
         <div class="contenido">
             <div class="tarjeta">
                 <h3>{{reto.titulo}}</h3>
-                <p>{{reto['user'] | json}}</p>
-                <p>{{reto['categoria'] | json}}</p>
+                <p><b>Categoría: </b>{{reto.categoria.nombre}}</p>
                 <div [innerHtml]="reto.descripcion"></div>
                 <button mat-raised-button color="accent" [style]="{'margin':'10px'}" (click)="eliminarReto()" [routerLink]="['/perfilAdmi']">Eliminar</button>
                 <button mat-raised-button color="primary">Editar</button>

@@ -1,4 +1,5 @@
 export class Recompensa{
-    nombre!: string;
+    _id!: string;
+    titulo!: string;
     descripcion!: string;
 }

@@ -8,5 +8,8 @@
         <div *ngFor= 'let post of posts'>
           <app-publicacion [post]="post"></app-publicacion>
         </div>
+        <div class="boton">
+            <button mat-raised-button color="primary" [routerLink]="['/perfilAdmi']">Atrás</button>
+        </div>
     </div>
 </app-menu-desplegable>
