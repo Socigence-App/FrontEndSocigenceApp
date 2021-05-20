@@ -28,5 +28,8 @@ export class InfoRetosService {
     }))
   }
 
-
+  updateReto(reto: Reto){
+    this.http.put(`${environment.apiUrl}reto/${reto._id}`, reto).subscribe(reto => console.log(reto));
+    console.log("Reto actualizado")
+  }
 }

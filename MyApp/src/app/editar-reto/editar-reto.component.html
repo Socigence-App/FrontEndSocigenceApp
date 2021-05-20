@@ -2,28 +2,29 @@
 <app-menu-desplegable-admi>
     <div class="general">
         <div class="titulo">
-            <h1>Crear Reto</h1>
+            <h1>Editar reto</h1>
         </div>
         
         <div class="reto">
+            <br>
             <mat-form-field class="example-full-width">
-            <mat-label>Titulo del reto</mat-label>
-            <input matInput placeholder="" [(ngModel)]="newReto.titulo">
+            <mat-label>Titulo</mat-label>
+            <input matInput placeholder="" [(ngModel)]="currentReto.titulo">
             </mat-form-field>
             <br>
-            <div class="listaCategorias">
+        
+            <div class="input-id-proyecto">
                 <p-listbox [options]="categorias" [(ngModel)]="selectedCategoria" optionLabel="nombre" [style]="{'width':'15rem'}"></p-listbox>
             </div>
             <br>
+
             <div class="editor">
-            <p-editor [(ngModel)]="newReto.descripcion" [style]="{'height':'150px'}"></p-editor>
+            <p-editor [(ngModel)]="currentReto.descripcion" [style]="{'height':'150px'}"></p-editor>
             </div>
             <br>
             <button mat-raised-button color="primary" [style]="{'margin':'10px'}" [routerLink]="['/perfilAdmi']">Atrás</button>
-            <button mat-raised-button color="accent" [routerLink]="['/perfilAdmi']" (click)="crearReto()">Crear</button>
+            <button mat-raised-button color="accent" [routerLink]="['/perfilAdmi']" (click)="editarReto()">Actualizar</button>
 
         </div>
     </div>
 </app-menu-desplegable-admi>
-
-

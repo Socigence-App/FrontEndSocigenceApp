@@ -53,6 +53,10 @@ import { VerPublicacionesAdmiComponent } from './ver-publicaciones-admi/ver-publ
 import { VerCategoriasAdmiComponent } from './ver-categorias-admi/ver-categorias-admi.component';
 import { CategoriaAdmiComponent } from './categoria-admi/categoria-admi.component';
 import { EditarCategoriaComponent } from './editar-categoria/editar-categoria.component';
+import { RetoAdmiComponent } from './reto-admi/reto-admi.component';
+import { VerRetosAdmiComponent } from './ver-retos-admi/ver-retos-admi.component';
+import { EditarRetoComponent } from './editar-reto/editar-reto.component';
+import { EditarUsuariosComponent } from './editar-usuarios/editar-usuarios.component';
 
 
 
@@ -85,7 +89,11 @@ import { EditarCategoriaComponent } from './editar-categoria/editar-categoria.co
     VerPublicacionesAdmiComponent,
     VerCategoriasAdmiComponent,
     CategoriaAdmiComponent,
-    EditarCategoriaComponent
+    EditarCategoriaComponent,
+    RetoAdmiComponent,
+    VerRetosAdmiComponent,
+    EditarRetoComponent,
+    EditarUsuariosComponent
   ],
   imports: [
     BrowserModule,

@@ -1,16 +1,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<app-menu-desplegable>
+<app-menu-desplegable-admi>
     <div class="general">
         <div class="titulo">
             <h1>Retos</h1>
         </div>
         <br>
         <div *ngFor= 'let reto of retos'>
-          <app-reto [reto]="reto"></app-reto>
+          <app-reto-admi [reto]="reto"></app-reto-admi>
         </div>
         <div class="boton">
-            <button mat-raised-button color="primary" [routerLink]="['/perfil']">Atrás</button>
+            <button mat-raised-button color="primary" [routerLink]="['/perfilAdmi']">Atrás</button>
         </div>
     </div>
-</app-menu-desplegable>
+</app-menu-desplegable-admi>
 

@@ -12,6 +12,7 @@ export const environment ={
     Posts: Array <Post>(),
     Categoria: new Categoria,
     Categorias: Array <Categoria>(),
+    Reto: new Reto,
     retos: Array<Reto>(),
     Recompensa: new Recompensa,
     Recompensas: Array <Recompensa>()

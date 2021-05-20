@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Reto } from '../models/reto.model';
-import { InfoRetosService } from '../service/info-retos.service';
 
 @Component({
   selector: 'app-reto',
@@ -13,14 +12,9 @@ export class RetoComponent implements OnInit {
 
   reto!: Reto;
 
-  constructor(private InfoRetosService: InfoRetosService) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-
-  eliminarReto(){
-    this.InfoRetosService.deleteReto(this.reto._id);
   }
   
 }
