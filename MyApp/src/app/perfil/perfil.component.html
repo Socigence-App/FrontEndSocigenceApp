@@ -11,31 +11,28 @@
             <div class="image">
                 <img src="https://happytravel.viajes/wp-content/uploads/2020/04/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" alt="ProfilePicture"width="40%" height="40%">
                 <br>
-                <button mat-mini-fab color="accent" aria-label="Example icon button with a delete icon">
-                    <mat-icon>add</mat-icon>
-                </button>
             </div>
             <br>
-            <h2>BIENVENIDO TAL PERSONA</h2>
+            <h2>Bienvenido {{currentUser.nombre}}</h2>
         </div>
 
         <div class="opciones">
             <h3>¿Que quieres hacer?</h3>
             <div class="opcion1">
                 <button mat-mini-fab color="accent" aria-label="Example icon button with a delete icon" [routerLink]="['/publicaciones']">
-                    <mat-icon>add</mat-icon>
+                    <mat-icon>search</mat-icon>
                 </button>
                Ver publicaciones
             </div>
             <div class="opcion2">
                 <button mat-mini-fab color="accent" aria-label="Example icon button with a delete icon" [routerLink]="['/crearPublicacion']">
-                    <mat-icon>add</mat-icon>
+                    <mat-icon>border_color</mat-icon>
                 </button>
                 Realizar publicacion
             </div>
             <div class="opcion3">
                 <button mat-mini-fab color="accent" aria-label="Example icon button with a delete icon">
-                    <mat-icon>add</mat-icon>
+                    <mat-icon>grade</mat-icon>
                 </button>
                 Reclamar recompensa
             </div>

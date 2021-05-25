@@ -12,13 +12,18 @@ import { Observable } from 'rxjs';
  
 export class UserInfoService{
 
-    constructor(private http: HttpClient){
+    apiDesplegada: string;
 
+    constructor(private http: HttpClient){
+        this.apiDesplegada = "https://socigence-backend.herokuapp.com/";
     }
 
     createUser(newUser: User){
-        this.http.post(`${environment.apiUrl}user`,newUser).subscribe(user => console.log(user))
+        this.http.post(`${environment.apiUrl}user`,newUser).subscribe(user => console.log(user));
+        this.http.post(`${this.apiDesplegada}user`, newUser).subscribe(user => console.log(user));
     }
+
+
 
     buscarUser (username: String):Observable<User[]> {
         return this.http.get<User[]>(`${environment.apiUrl}user/${username}`);
@@ -33,6 +38,10 @@ export class UserInfoService{
             console.log("Usuario con id: "+ idUser + " Eliminado")
         }))
 
+    }
+
+    updateUser(user: User){
+        this.http.put(`${environment.apiUrl}user/${user._id}`, user).subscribe(user => console.log(user));
     }
 
 

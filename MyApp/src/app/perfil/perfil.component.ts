@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../environment/env';
+import { User } from '../models/user.model';
 
 @Component({
   selector: 'app-perfil',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilComponent implements OnInit {
 
-  constructor() { }
+  currentUser!: User;
+
+  constructor() {
+    this.currentUser = environment.User;
+   }
 
   ngOnInit(): void {
   }

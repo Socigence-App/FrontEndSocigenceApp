@@ -11,7 +11,7 @@
                 <p> <b>Contraseña:</b> {{usuario.contrasena}}</p>
                 <p> <b>Tipo de usuario:</b>  {{usuario.usertipo}}</p>
                 <button mat-raised-button color="accent" [style]="{'margin':'10px'}" (click)="eliminarUsuario()" [routerLink]="['/perfilAdmi']">Eliminar</button>
-                <button mat-raised-button color="primary">Editar</button>
+                <button mat-raised-button color="primary" (click)="editar(usuario)" [routerLink]="['/editarUsuario']">Editar</button>
             </div>
         </div>
     </div>

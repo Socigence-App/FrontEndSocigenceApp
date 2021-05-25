@@ -26,7 +26,6 @@ export class EditarPublicacionComponent implements OnInit {
       environment.Categorias = categoria
   })
   this.categorias = environment.Categorias;
-  
   }
 
   editarPublicacion(){

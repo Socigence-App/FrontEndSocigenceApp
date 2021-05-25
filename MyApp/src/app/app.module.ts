@@ -57,6 +57,8 @@ import { RetoAdmiComponent } from './reto-admi/reto-admi.component';
 import { VerRetosAdmiComponent } from './ver-retos-admi/ver-retos-admi.component';
 import { EditarRetoComponent } from './editar-reto/editar-reto.component';
 import { EditarUsuariosComponent } from './editar-usuarios/editar-usuarios.component';
+import { VerRecompensasAdmiComponent } from './ver-recompensas-admi/ver-recompensas-admi.component';
+import { RecompensaAdmiComponent } from './recompensa-admi/recompensa-admi.component';
 
 
 
@@ -93,7 +95,9 @@ import { EditarUsuariosComponent } from './editar-usuarios/editar-usuarios.compo
     RetoAdmiComponent,
     VerRetosAdmiComponent,
     EditarRetoComponent,
-    EditarUsuariosComponent
+    EditarUsuariosComponent,
+    VerRecompensasAdmiComponent,
+    RecompensaAdmiComponent
   ],
   imports: [
     BrowserModule,

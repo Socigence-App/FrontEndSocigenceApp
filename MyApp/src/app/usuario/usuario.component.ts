@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { environment } from '../environment/env';
 import { User } from '../models/user.model';
 import { UserInfoService } from '../service/user-info.service';
 
@@ -20,6 +21,10 @@ export class UsuarioComponent implements OnInit {
 
   eliminarUsuario(){
     this.UserInfoService.deleteUser(this.usuario._id);
+  }
+
+  editar(usuario: User){
+    environment.User= usuario;
   }
 
 }

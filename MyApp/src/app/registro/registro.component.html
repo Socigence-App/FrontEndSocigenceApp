@@ -22,10 +22,16 @@
             <input matInput placeholder="Ex. juan123@gamil.com" [(ngModel)]="nuevoUsuario.email">
         </mat-form-field>
         <br>
-        <div class="listboxDocumento">
-            <p-listbox [options]="tipoDoc" [(ngModel)]="nuevoUsuario.IdTipo" optionLabel="IdTipo" [style]="{'width':'15rem'}">Cedula</p-listbox>
+        <div class="contenido-buttons">
+            <div class="tipoBox">
+                <label id="example-radio-group-label">Elige tu tipo de identificación:</label>
+                <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="nuevoUsuario.IdTipo">
+                <mat-radio-button class="example-radio-button" *ngFor="let identificacion of identificaciones" [value]="identificacion" [color]="color">
+                {{identificacion}}
+                </mat-radio-button>
+                </mat-radio-group>
+            </div>
         </div>
-        <br>
         <mat-form-field class="example-full-width">
             <mat-label>Numero de identificación</mat-label>
             <input matInput placeholder="Ex. 123456789" [(ngModel)]="nuevoUsuario.IdNumero">

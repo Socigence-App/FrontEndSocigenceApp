@@ -11,43 +11,40 @@
             <div class="image">
                 <img src="https://happytravel.viajes/wp-content/uploads/2020/04/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" alt="ProfilePicture"width="40%" height="40%">
                 <br>
-                <button mat-mini-fab color="accent" aria-label="Example icon button with a delete icon">
-                    <mat-icon>add</mat-icon>
-                </button>
             </div>
             <br>
-            <h2>BIENVENIDO TAL PERSONA</h2>
+            <h2>Bienvenido {{currentUser.nombre}}</h2>
         </div>
 
         <div class="opciones">
             <h3>¿Que quieres hacer?</h3>
             <div class="opcion1">
                 <button mat-mini-fab color="accent" aria-label="Example icon button with a delete icon" [routerLink]="['/usuarios']">
-                    <mat-icon>add</mat-icon>
+                    <mat-icon>face</mat-icon>
                 </button>
                Ver usuarios
             </div>
             <div class="opcion2">
                 <button mat-mini-fab color="accent" aria-label="Example icon button with a delete icon" [routerLink]="['/publicacionesAdmi']">
-                    <mat-icon>add</mat-icon>
+                    <mat-icon>find_in_page</mat-icon>
                 </button>
                 Ver publicaciones
             </div>
             <div class="opcion3">
                 <button mat-mini-fab color="accent" aria-label="Example icon button with a delete icon" [routerLink]="['/crearCategoria']">
-                    <mat-icon>add</mat-icon>
+                    <mat-icon>spa</mat-icon>
                 </button>
                 Crear categorias
             </div>
             <div class="opcion4">
                 <button mat-mini-fab color="accent" aria-label="Example icon button with a delete icon" [routerLink]="['/crearReto']">
-                    <mat-icon>add</mat-icon>
+                    <mat-icon>whatshot</mat-icon>
                 </button>
                 Crear retos
             </div>
             <div class="opcion5">
                 <button mat-mini-fab color="accent" aria-label="Example icon button with a delete icon" [routerLink]="['/crearRecompensa']">
-                    <mat-icon>add</mat-icon>
+                    <mat-icon>grade</mat-icon>
                 </button>
                 Crear recompensas
             </div>

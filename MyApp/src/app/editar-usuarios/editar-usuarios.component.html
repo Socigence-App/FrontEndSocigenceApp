@@ -1,1 +1,70 @@
-<p>editar-usuarios works!</p>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="general">
+    <div class="cabecera">
+        <h1>Editar usuario</h1>
+        <!--<mat-icon aria-hidden="false" class="iconoTitulo">group</mat-icon>-->
+    </div>
+    <br>
+
+    <div class="registro">
+        <mat-form-field class="example-full-width">
+            <mat-label>Nombres*</mat-label>
+            <input matInput placeholder="Ex. Juan Felipe" [(ngModel)]="currentUser.nombre">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width">
+            <mat-label>Username*</mat-label>
+            <input matInput placeholder="Ex. Peña Paiba" [(ngModel)]="currentUser.username">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Ex. juan123@gamil.com" [(ngModel)]="currentUser.email">
+        </mat-form-field>
+        <br>
+        <div class="contenido-buttons">
+            <div class="tipoBox">
+                <label id="example-radio-group-label">Elige tu tipo de identificación:</label>
+                <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="currentUser.IdTipo">
+                <mat-radio-button class="example-radio-button" *ngFor="let identificacion of identificaciones" [value]="identificacion" [color]="color">
+                {{identificacion}}
+                </mat-radio-button>
+                </mat-radio-group>
+            </div>
+        </div>
+        <mat-form-field class="example-full-width">
+            <mat-label>Numero de identificación</mat-label>
+            <input matInput placeholder="Ex. 123456789" [(ngModel)]="currentUser.IdNumero">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width">
+            <mat-label>Telefono</mat-label>
+            <input matInput placeholder="Ex. 3201234567" [(ngModel)]="currentUser.Telefono">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label>Contraseña</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="currentUser.contrasena">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+        <br>
+        
+        <div class="contenido-buttons">
+            <div class="tipoBox">
+                <label id="example-radio-group-label">Elige tu tipo de usuario:</label>
+                <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="currentUser.usertipo">
+                <mat-radio-button class="example-radio-button" *ngFor="let tipo of tipos" [value]="tipo" [color]="color">
+                {{tipo}}
+                </mat-radio-button>
+                </mat-radio-group>
+                <div class="rolChoose">El rol escogido es: {{currentUser.usertipo}}</div>
+            </div>
+        </div>
+        <button mat-raised-button color="primary" style="margin: 5px;" [routerLink]="['/usuarios']">Atrás</button>
+        <button mat-raised-button color="accent" [routerLink]="['/perfilAdmi']" (click)="editarUsuario()">Actualizar</button>
+    </div>
+</div>
+
+

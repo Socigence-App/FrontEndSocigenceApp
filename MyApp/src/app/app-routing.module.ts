@@ -7,6 +7,7 @@ import { CrearRetosComponent } from './crear-retos/crear-retos.component';
 import { EditarCategoriaComponent } from './editar-categoria/editar-categoria.component';
 import { EditarPublicacionComponent } from './editar-publicacion/editar-publicacion.component';
 import { EditarRetoComponent } from './editar-reto/editar-reto.component';
+import { EditarUsuariosComponent } from './editar-usuarios/editar-usuarios.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PerfilAdmiComponent } from './perfil-admi/perfil-admi.component';
@@ -16,6 +17,7 @@ import { VerCategoriasAdmiComponent } from './ver-categorias-admi/ver-categorias
 import { VerCategoriasComponent } from './ver-categorias/ver-categorias.component';
 import { VerPublicacionesAdmiComponent } from './ver-publicaciones-admi/ver-publicaciones-admi.component';
 import { VerPublicacionesComponent } from './ver-publicaciones/ver-publicaciones.component';
+import { VerRecompensasAdmiComponent } from './ver-recompensas-admi/ver-recompensas-admi.component';
 import { VerRecompensasComponent } from './ver-recompensas/ver-recompensas.component';
 import { VerRetosAdmiComponent } from './ver-retos-admi/ver-retos-admi.component';
 import { VerRetosComponent } from './ver-retos/ver-retos.component';
@@ -43,7 +45,9 @@ const routes: Routes = [
   {path: 'categoriasAdmi', component: VerCategoriasAdmiComponent},
   {path: 'editarCategoria', component: EditarCategoriaComponent},
   {path: 'retosAdmi', component: VerRetosAdmiComponent},
-  {path: 'editarReto', component: EditarRetoComponent}
+  {path: 'editarReto', component: EditarRetoComponent},
+  {path: 'recompensasAdmi', component: VerRecompensasAdmiComponent},
+  {path: 'editarUsuario', component: EditarUsuariosComponent}
 ];
 
 @NgModule({
