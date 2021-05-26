@@ -1,15 +1,14 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { environment } from '../environment/env';
 import { Post } from '../models/post.model';
 import { InfoPublicacionesServiceService } from '../service/info-publicaciones-service.service';
 
-
 @Component({
-  selector: 'app-publicacion-admi',
-  templateUrl: './publicacion-admi.component.html',
-  styleUrls: ['./publicacion-admi.component.css']
+  selector: 'app-solucion',
+  templateUrl: './solucion.component.html',
+  styleUrls: ['./solucion.component.css']
 })
-export class PublicacionAdmiComponent implements OnInit {
+export class SolucionComponent implements OnInit {
 
   @Input()
 
@@ -27,7 +26,8 @@ export class PublicacionAdmiComponent implements OnInit {
   }
 
   eliminarPost(){
-    this.InfoPublicacionesService.deletePost(this.post._id);
+    this.InfoPublicacionesService.eliminarPostAnalisis(this.post._id);
   }
+
 
 }

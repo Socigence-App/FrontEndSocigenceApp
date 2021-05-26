@@ -1,0 +1,30 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<app-menu-desplegable-analisis>
+    <div class="general">
+        <div class="titulo">
+            <h1>Editar solución</h1>
+        </div>
+        
+        <div class="publicacion">
+            <br>
+            <mat-form-field class="example-full-width">
+            <mat-label>Titulo*</mat-label>
+            <input matInput placeholder="" [(ngModel)]="currentPost.titulo">
+            </mat-form-field>
+            <br>
+        
+            <div class="input-id-proyecto">
+                <p-listbox [options]="categorias" [(ngModel)]="selectedCategoria" optionLabel="nombre" [style]="{'width':'15rem'}"></p-listbox>
+            </div>
+            <br>
+
+            <div class="editor">
+            <p-editor [(ngModel)]="currentPost.descripcion" [style]="{'height':'150px'}"></p-editor>
+            </div>
+            <br>
+            <button mat-raised-button color="primary" [style]="{'margin':'10px'}" [routerLink]="['/verSoluciones']">Atrás</button>
+            <button mat-raised-button color="warn" [routerLink]="['/perfilAnalisis']" (click)="editarSolucion()">Actualizar</button>
+
+        </div>
+    </div>
+</app-menu-desplegable-analisis>

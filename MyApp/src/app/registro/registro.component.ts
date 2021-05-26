@@ -13,7 +13,7 @@ export class RegistroComponent implements OnInit {
   hide = true;
   nuevoUsuario: User;
   tipoUsuario!: string;
-  tipos: string[]=['Administrador', 'Normal'];
+  tipos: string[]=['Administrador', 'Normal','Estudiante de Analisis'];
   identificaciones: string[] =['Tarjeta de identidad', 'Cedula de Ciudadanía', 'Pasaporte'];
   color: ThemePalette = 'accent';
 
@@ -28,7 +28,5 @@ export class RegistroComponent implements OnInit {
   public crearUsuario(){
     this.UserInfoService.createUser(this.nuevoUsuario);
   }
-
-  
 
 }

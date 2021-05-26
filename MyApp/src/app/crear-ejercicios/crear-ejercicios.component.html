@@ -1,0 +1,27 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<app-menu-desplegable-analisis>
+    <div class="general">
+        <div class="titulo">
+            <h1>Crear ejercicio</h1>
+        </div>
+        <br>
+        <div class="categoria">
+            <mat-form-field class="example-full-width">
+            <mat-label>Nombre del ejercicio</mat-label>
+            <input matInput placeholder="Ej. Ejercicio1" [(ngModel)]="nuevaCategoria.nombre">
+            </mat-form-field>
+            <br>
+            <br>
+            <div class="editor">
+            <p-editor [(ngModel)]="nuevaCategoria.descripcion" [style]="{'height':'150px'}"></p-editor>
+            </div>
+            <br>
+            <br>
+            <button mat-raised-button color="primary" [style]="{'margin':'10px'}" [routerLink]="['/perfilAnalisis']">Atrás</button>
+            <button mat-raised-button color="warn" [routerLink]="['/perfilAnalisis']" (click)="crearEjercicio()">Crear</button>
+            
+
+        </div>
+    </div>
+</app-menu-desplegable-analisis>
+

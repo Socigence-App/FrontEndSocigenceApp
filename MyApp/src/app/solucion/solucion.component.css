@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+.general{
+    width: 100%;
+    height: 100%;
+}
+
+.example-card {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: #FBC02D solid 1px;
+}
+
+  
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.puntuacion{
+  text-align: left;
+}
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+    font-size: 30px;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+    font-size: 30px;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+
+
+@media only screen and (max-width: 840px){
+    .general{
+        width: 100%;
+    }
+
+    .example-card {
+        max-width: 320px;
+    }
+}
+

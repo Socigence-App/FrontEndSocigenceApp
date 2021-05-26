@@ -28,6 +28,10 @@ export class UserInfoService{
     buscarUser (username: String):Observable<User[]> {
         return this.http.get<User[]>(`${environment.apiUrl}user/${username}`);
     }
+
+    buscarUserAnalisis(username: String):Observable<User[]>{
+        return this.http.get<User[]>(`${this.apiDesplegada}user/${username}`);
+    }
   
     getAllUsers (): Observable<User[]> {
         return this.http.get <User[]>(`${environment.apiUrl}user`);

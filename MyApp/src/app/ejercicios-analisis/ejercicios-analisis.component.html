@@ -1,0 +1,11 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="general">
+        <div class="contenido">
+            <div class="tarjeta">
+                <h3>{{categoria.nombre}}</h3>
+                <div [innerHtml]="categoria.descripcion"></div>
+                <button mat-raised-button color="warn" [style]="{'margin':'10px'}" (click)="eliminarCategoria()" [routerLink]="['/perfilAnalisis']">Eliminar</button>
+                <button mat-raised-button color="primary" [routerLink]="['/editarEjercicio']" (click)="editar(categoria)">Editar</button>
+            </div>
+        </div>
+    </div>

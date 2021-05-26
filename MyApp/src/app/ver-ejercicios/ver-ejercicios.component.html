@@ -1,0 +1,15 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<app-menu-desplegable-analisis>
+    <div class="general">
+        <div class="titulo">
+            <h1>Ejercicios</h1>
+        </div>
+        <br>
+        <div *ngFor= 'let categoria of categorias'>
+          <app-ejercicios-analisis [categoria]="categoria"></app-ejercicios-analisis>
+        </div>
+        <div class="boton">
+            <button mat-raised-button color="primary" [routerLink]="['/perfilAnalisis']">Atrás</button>
+        </div>
+    </div>
+</app-menu-desplegable-analisis>

@@ -59,6 +59,16 @@ import { EditarRetoComponent } from './editar-reto/editar-reto.component';
 import { EditarUsuariosComponent } from './editar-usuarios/editar-usuarios.component';
 import { VerRecompensasAdmiComponent } from './ver-recompensas-admi/ver-recompensas-admi.component';
 import { RecompensaAdmiComponent } from './recompensa-admi/recompensa-admi.component';
+import { PerfilAnalisisComponent } from './perfil-analisis/perfil-analisis.component';
+import { EjerciciosAnalisisComponent } from './ejercicios-analisis/ejercicios-analisis.component';
+import { VerEjerciciosComponent } from './ver-ejercicios/ver-ejercicios.component';
+import { MenuDesplegableAnalisisComponent } from './menu-desplegable-analisis/menu-desplegable-analisis.component';
+import { CrearEjerciciosComponent } from './crear-ejercicios/crear-ejercicios.component';
+import { EditarEjercicioComponent } from './editar-ejercicio/editar-ejercicio.component';
+import { CrearSolucionComponent } from './crear-solucion/crear-solucion.component';
+import { SolucionComponent } from './solucion/solucion.component';
+import { VerSolucionesComponent } from './ver-soluciones/ver-soluciones.component';
+import { EditarSolucionComponent } from './editar-solucion/editar-solucion.component';
 
 
 
@@ -97,7 +107,17 @@ import { RecompensaAdmiComponent } from './recompensa-admi/recompensa-admi.compo
     EditarRetoComponent,
     EditarUsuariosComponent,
     VerRecompensasAdmiComponent,
-    RecompensaAdmiComponent
+    RecompensaAdmiComponent,
+    PerfilAnalisisComponent,
+    EjerciciosAnalisisComponent,
+    VerEjerciciosComponent,
+    MenuDesplegableAnalisisComponent,
+    CrearEjerciciosComponent,
+    EditarEjercicioComponent,
+    CrearSolucionComponent,
+    SolucionComponent,
+    VerSolucionesComponent,
+    EditarSolucionComponent
   ],
   imports: [
     BrowserModule,

@@ -37,12 +37,20 @@ export class LoginComponent implements OnInit {
           environment.User = user[0]; 
           console.log("Ingreso con exito");
           
-          if (user[0].usertipo == 'Administrador') {
-            console.log("Es admin");
-            this.link = "/perfilAdmi";
-            console.log("entro a la vista");
-          } else {
+          if (user[0].usertipo == 'Estudiante de Analisis') {
+            let usuarioAnalisis = await this.userInfoService.buscarUserAnalisis(this.username).subscribe(
+              async (user) => {
+                console.log(user);
+                environment.User = user[0];
+                this.link = "/perfilAnalisis"
+              }
+
+            )
+          } else if (user[0].usertipo == 'Normal') {
             this.link = "/perfil";
+          }
+          else{
+            this.link = "/perfilAdmi"
           }
         } 
         else {

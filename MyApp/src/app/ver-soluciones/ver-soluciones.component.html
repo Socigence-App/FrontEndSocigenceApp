@@ -1,0 +1,15 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<app-menu-desplegable-analisis>
+    <div class="general">
+        <div class="titulo">
+            <h1>Soluciones</h1>
+        </div>
+        <br>
+        <div *ngFor= 'let post of posts'>
+          <app-solucion [post]="post"></app-solucion>
+        <div class="boton">
+            <button mat-raised-button color="primary" [routerLink]="['/perfilAnalisis']">Atrás</button>
+        </div>
+    </div>
+
+
